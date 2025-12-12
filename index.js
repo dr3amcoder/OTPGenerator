@@ -57,3 +57,31 @@ const OTPGenerator = () => {
         </div>
     )
 };
+
+const CharacterCounter = () => {
+    const [text, setText] = useState("");
+    const length = text.length;
+
+    return (
+        <div>
+            <input
+                id="counter-input"
+                type="text"
+                value={text}
+                onChange={(e) => setText(e.target.value)}
+                placeholder="Type something..."
+            />
+            {length > 20 && <div className="warning">Too long!</div>}
+            <p id="counter-display">You have typed {length} characters.</p>
+        </div>
+    )
+};
+
+const App = () => {
+    return (
+        <div className="app-wrapper">
+            <OTPGenerator />
+            <CharacterCounter />
+        </div>
+    )
+};

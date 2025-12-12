@@ -72,3 +72,45 @@ body {
   opacity: 0.6;
   cursor: not-allowed;
 }
+
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+  max-width: 1000px;
+}
+
+#counter-title {
+  color: #667eea;
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+#counter-input {
+  width: 100%;
+  padding: 15px;
+  font-size: 1.1rem;
+  border: 2px solid #667eea;
+  border-radius: 10px;
+  outline: none;
+  transition: border-color 0.3s ease;
+  margin-bottom: 15px;
+}
+
+#counter-input:focus {
+  border-color: #764ba2;
+}
+
+#counter-display {
+  color: #666;
+  font-size: 1.1rem;
+  margin-top: 10px;
+}
+
+.warning {
+  color: #e74c3c;
+  font-weight: 600;
+  margin: 10px 0;
+  font-size: 1rem;
+}
