@@ -1,6 +1,6 @@
 const { useState, useEffect, useRef } = React;
 
-export const OTPGenerator = () => {
+const OTPGenerator = () => {
     const [otp, setOtp] = useState("")
     const [secondsLeft, setSecondsLeft] = useState(5)
     const [isCountingDown, setIsCountingDown] = useState(false)
