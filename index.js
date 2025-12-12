@@ -63,7 +63,7 @@ const CharacterCounter = () => {
     const length = text.length;
 
     return (
-        <div>
+        <div className="container">
             <input
                 id="counter-input"
                 type="text"
