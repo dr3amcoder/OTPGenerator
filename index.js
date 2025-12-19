@@ -46,7 +46,7 @@ const OTPGenerator = () => {
         <div className="container">
             <h1 id="otp-title">OTP Generator</h1>
             <h2 id="otp-display">{otp ? otp : "Click 'Generate OTP' to get a code"}</h2>
-            <p id="otp-timer" aria-live="polite">{isCountingDown ? `Expires in: ${secondsLeft} seconds` : "OTP expired. Click the button to generate a new OTP."}</p>
+            <p id="otp-timer" aria-live="polite">{otp == "" ? "" : (isCountingDown ? `Expires in: ${secondsLeft} seconds` : "OTP expired. Click the button to generate a new OTP.")}</p>
             <button
                 id="generate-otp-button"
                 onClick={generator}
