@@ -1,5 +1,18 @@
 const { useState, useEffect, useRef } = React;
 
+const AppDetails = () => {
+    return (
+        <div className="container">
+            <h1 id="app-title">dr3amcoder's mini apps</h1>
+            <p id="app-description">
+                A growing collection of React mini-apps built during my continuous learning journey.
+                <br/>
+                Each project focuses on practicing specific React concepts and patterns through hands-on development.
+            </p>
+        </div>
+    )
+}
+
 const OTPGenerator = () => {
     const [otp, setOtp] = useState("")
     const [secondsLeft, setSecondsLeft] = useState(5)
@@ -174,12 +187,7 @@ const SuperheroForm = () => {
 const App = () => {
     return (
         <div className="app-wrapper">
-            <h1 id="app-title">dr3amcoder's mini apps</h1>
-            <p id="app-description">
-                A growing collection of React mini-apps built during my continuous learning journey.
-                <br/>
-                Each project focuses on practicing specific React concepts and patterns through hands-on development.
-            </p>
+            <AppDetails />
             <OTPGenerator />
             <CharacterCounter />
             <SuperheroForm />
