@@ -24,6 +24,25 @@ body {
   width: 100%;
 }
 
+#app-title {
+  color: #667eea;
+  margin-bottom: 30px;
+  font-size: 4rem;
+}
+
+#app-description {
+  font-size: 1rem;
+  color: #333;
+  margin: 20px 0;
+  font-family: "Georgia", 'Times New Roman', Times, serif;
+  letter-spacing: 0.1em;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
 #otp-title {
   color: #667eea;
   margin-bottom: 30px;
@@ -81,6 +100,14 @@ body {
   max-width: 1000px;
 }
 
+/* ---- Character Counter ---- */
+
+#character-counter-title {
+  color: #667eea;
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
 #counter-input {
   width: 100%;
   padding: 15px;
@@ -104,6 +131,12 @@ body {
 }
 
 /* ---- Form Layout ---- */
+
+#superhero-application-form-title {
+  color: #667eea;
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
 
 .section {
   display: flex;

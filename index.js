@@ -64,6 +64,7 @@ const CharacterCounter = () => {
 
     return (
         <div className="container">
+            <h2 id="character-counter-title">Character Counter</h2>
             <input
                 id="counter-input"
                 type="text"
@@ -109,7 +110,7 @@ const SuperheroForm = () => {
 
   return (
     <div className='container'>
-      <h2>Superhero Application Form</h2>
+      <h2 id="superhero-application-form-title">Superhero Application Form</h2>
       <p>Please complete all fields</p>
        <form method='post' action='https://superhero-application-form.freecodecamp.org'>
         <div className='section'>
@@ -173,6 +174,12 @@ const SuperheroForm = () => {
 const App = () => {
     return (
         <div className="app-wrapper">
+            <h1 id="app-title">dr3amcoder's mini apps</h1>
+            <p id="app-description">
+                A growing collection of React mini-apps built during my continuous learning journey.
+                <br/>
+                Each project focuses on practicing specific React concepts and patterns through hands-on development.
+            </p>
             <OTPGenerator />
             <CharacterCounter />
             <SuperheroForm />
