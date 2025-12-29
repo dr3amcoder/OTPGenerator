@@ -102,3 +102,74 @@ body {
   font-weight: 600;
   margin: 5px 0;
 }
+
+/* ---- Form Layout ---- */
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 25px;
+  text-align: left;
+}
+
+.section.column {
+  align-items: flex-start;
+}
+
+/* ---- Inputs & Select ---- */
+
+.section input[type="text"],
+.section input[type="password"],
+.section select {
+  width: 100%;
+  padding: 14px;
+  border-radius: 10px;
+  border: 2px solid #667eea;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.section input:focus,
+.section select:focus {
+  border-color: #764ba2;
+  box-shadow: 0 0 0 3px rgba(118, 75, 162, 0.2);
+}
+
+/* ---- Checkbox Group ---- */
+
+.section label {
+  font-weight: 500;
+  color: #333;
+}
+
+.section label > span {
+  margin-left: 8px;
+}
+
+.section input[type="checkbox"] {
+  margin-right: 8px;
+  accent-color: #667eea;
+  transform: scale(1.1);
+}
+
+/* ---- Submit Button ---- */
+
+.submit-btn {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 50px;
+  border: none;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(102, 126, 234, 0.4);
+}
