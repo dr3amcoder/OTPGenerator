@@ -206,3 +206,55 @@ body {
   transform: translateY(-2px);
   box-shadow: 0 10px 20px rgba(102, 126, 234, 0.4);
 }
+
+
+/* ---- Event RSVP ---- */
+#event-rsvp-title {
+  color: #667eea;
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+#event-rsvp-confirmation {
+  color: #667eea;
+  margin-bottom: 30px;
+  font-size: 1.5rem;
+}
+
+.rsvp-details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 25px;
+  text-align: left;
+}
+
+
+.event-form-details select {
+  width: 100%;
+  padding: 14px;
+  border-radius: 10px;
+  border: 2px solid #667eea;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.event-form-details input:focus,
+.event-form-details select:focus {
+  border-color: #764ba2;
+  box-shadow: 0 0 0 3px rgba(118, 75, 162, 0.2);
+}
+
+/* ---- Checkbox Group ---- */
+
+.event-form-details label {
+  font-weight: 500;
+  color: #333;
+}
+
+.event-form-details input[type="checkbox"] {
+  margin-right: 8px;
+  accent-color: #667eea;
+  transform: scale(1.1);
+}
