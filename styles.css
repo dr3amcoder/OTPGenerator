@@ -282,3 +282,11 @@ body {
 .rsvp-details strong {
   color: #667eea;
 }
+
+
+/* ---- Shopping List ----*/
+#shopping-list-title {
+  color: #667eea;
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
